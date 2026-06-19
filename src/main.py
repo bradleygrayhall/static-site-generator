@@ -11,5 +11,5 @@ def main():
     else:
         basepath = sys.argv[1]
     copy_static("static","docs")
-    generate_pages_recursive("content","template.html","public",basepath)
+    generate_pages_recursive("content","template.html","docs",basepath)
 main()
