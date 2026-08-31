@@ -15,6 +15,7 @@ def main():
         basepath = "/" + basepath
     if not basepath.endswith("/"):
         basepath += "/"
+    
     copy_static("static","docs")
     generate_pages_recursive("content","template.html","docs",basepath)
 main()
