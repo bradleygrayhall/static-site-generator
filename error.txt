@@ -1,0 +1,29 @@
+............................................F........................................................................................F..............................
+======================================================================
+FAIL: test_markdown_to_html_node_quote (test_gencontent.TestMarkdownToHTMLNode.test_markdown_to_html_node_quote)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/c/Repos/static-site-generator/src/test_gencontent.py", line 155, in test_markdown_to_html_node_quote
+    self.assertEqual(
+AssertionError: '<div><blockquote>This is a quote</blockquote></div>' != '<div><blockquote>> This is a quote</blockquote></div>'
+- <div><blockquote>This is a quote</blockquote></div>
++ <div><blockquote>> This is a quote</blockquote></div>
+?                  ++
+
+
+======================================================================
+FAIL: test_markdown_to_html_node_quote (test_markdown_blocks.TestMarkdownToHTMLNode.test_markdown_to_html_node_quote)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/c/Repos/static-site-generator/src/test_markdown_blocks.py", line 427, in test_markdown_to_html_node_quote
+    self.assertEqual(
+AssertionError: '<div><blockquote>This is a quote</blockquote></div>' != '<div><blockquote>> This is a quote</blockquote></div>'
+- <div><blockquote>This is a quote</blockquote></div>
++ <div><blockquote>> This is a quote</blockquote></div>
+?                  ++
+
+
+----------------------------------------------------------------------
+Ran 164 tests in 0.029s
+
+FAILED (failures=2)

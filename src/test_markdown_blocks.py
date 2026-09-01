@@ -426,7 +426,7 @@ class TestMarkdownToHTMLNode(unittest.TestCase):
 
         self.assertEqual(
             node.to_html(),
-            "<div><blockquote>> This is a quote</blockquote></div>",
+            "<div><blockquote>This is a quote</blockquote></div>",
         )
 
     def test_markdown_to_html_node_unordered_list(self):
